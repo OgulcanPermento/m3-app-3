@@ -1,12 +1,9 @@
 components:
 - components:
-  - name: data_grid
+  - name: text_label
     properties:
-      auto_header: true
-      show_page_size: true
-      page_size: 10
-      show_page_controls: true
-    type: DataGrid
+      text: ''
+    type: Label
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}
