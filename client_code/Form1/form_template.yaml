@@ -1,48 +1,26 @@
 components:
 - components:
-  - name: header_panel
-    properties:
-      background: '#2c3e50'
-      foreground: 'white'
-      padding: '20px'
-      spacing_above: 'none'
-      spacing_below: 'large'
-    type: FlowPanel
-    components:
+  - components:
     - name: title_label
-      properties:
-        text: 'Welcome to My App'
-        font_size: 24
-        bold: true
+      properties: {bold: true, font_size: 24, text: Welcome to My App}
       type: Label
-  - name: main_content
-    properties:
-      background: '#f5f6fa'
-      padding: '20px'
-      spacing_above: 'none'
-      spacing_below: 'none'
+    name: header_panel
+    properties: {background: '#2c3e50', foreground: white, spacing_above: none, spacing_below: large}
     type: FlowPanel
-    components:
+  - components:
     - name: text_label
-      properties:
-        text: ''
-        font_size: 18
-        foreground: '#2c3e50'
+      properties: {font_size: 18, foreground: '#2c3e50', text: ''}
       type: Label
-  - name: footer_panel
-    properties:
-      background: '#2c3e50'
-      foreground: 'white'
-      padding: '20px'
-      spacing_above: 'large'
-      spacing_below: 'none'
+    name: main_content
+    properties: {background: '#f5f6fa', spacing_above: none, spacing_below: none}
     type: FlowPanel
-    components:
+  - components:
     - name: footer_label
-      properties:
-        text: '© 2024 My App'
-        font_size: 14
+      properties: {font_size: 14, text: © 2024 My App}
       type: Label
+    name: footer_panel
+    properties: {background: '#2c3e50', foreground: white, spacing_above: large, spacing_below: none}
+    type: FlowPanel
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}

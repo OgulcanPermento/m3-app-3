@@ -15,10 +15,6 @@ class Form1(Form1Template):
     current_year = datetime.now().year
     self.footer_label.text = f'© {current_year} My App'
     
-    # Add some hover effects
-    self.main_content.set_event_handler('mouse_enter', self.on_main_content_hover)
-    self.main_content.set_event_handler('mouse_leave', self.on_main_content_leave)
-    
   def on_main_content_hover(self, **event_args):
     """This method is called when the mouse enters the main content area"""
     self.main_content.background = '#e8eaf6'  # Lighter shade of the background
