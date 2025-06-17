@@ -1,8 +1,7 @@
 components:
 - components:
   - name: text_label
-    properties:
-      text: ''
+    properties: {text: ''}
     type: Label
   layout_properties: {slot: default}
   name: content_panel
