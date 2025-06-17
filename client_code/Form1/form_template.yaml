@@ -18,6 +18,7 @@ components:
       - name: text_label
         properties: {font_size: 16, foreground: '#424242', text: ''}
         type: Label
+      event_bindings: {}
       name: stats_panel
       properties: {background: white, border: '1px solid #e0e0e0', corner_radius: 8px, padding: 20px, spacing_above: none, spacing_below: large}
       type: FlowPanel
@@ -28,6 +29,7 @@ components:
       - name: info_content
         properties: {font_size: 16, foreground: '#424242', text: This is a professional dashboard layout with modern styling.}
         type: Label
+      event_bindings: {}
       name: info_panel
       properties: {background: white, border: '1px solid #e0e0e0', corner_radius: 8px, padding: 20px, spacing_above: none, spacing_below: none}
       type: FlowPanel
@@ -41,6 +43,10 @@ components:
     name: footer_panel
     properties: {background: '#1a237e', foreground: white, height: 60px, padding: 20px, spacing_above: large, spacing_below: none}
     type: FlowPanel
+  - layout_properties: {grid_position: 'BNKDSF,SONUUB'}
+    name: column_panel_1
+    properties: {}
+    type: ColumnPanel
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}
