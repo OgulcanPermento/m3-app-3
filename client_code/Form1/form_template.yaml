@@ -2,46 +2,99 @@ components:
 - components:
   - name: header_panel
     properties:
-      background: '#2c3e50'
+      background: '#1a237e'
       foreground: 'white'
       padding: '20px'
       spacing_above: 'none'
-      spacing_below: 'large'
+      spacing_below: 'none'
+      height: '80px'
     type: FlowPanel
     components:
     - name: title_label
       properties:
-        text: 'Welcome to My App'
-        font_size: 24
+        text: 'Dashboard'
+        font_size: 28
         bold: true
+        foreground: 'white'
       type: Label
-  - name: main_content
+    - name: subtitle_label
+      properties:
+        text: 'Welcome to your control panel'
+        font_size: 16
+        foreground: '#b3e5fc'
+        spacing_above: 'small'
+      type: Label
+  - name: main_container
     properties:
-      background: '#f5f6fa'
-      padding: '20px'
+      background: '#f5f5f5'
+      padding: '30px'
       spacing_above: 'none'
       spacing_below: 'none'
     type: FlowPanel
     components:
-    - name: text_label
+    - name: stats_panel
       properties:
-        text: ''
-        font_size: 18
-        foreground: '#2c3e50'
-      type: Label
+        background: 'white'
+        padding: '20px'
+        spacing_above: 'none'
+        spacing_below: 'large'
+        border: '1px solid #e0e0e0'
+        corner_radius: '8px'
+      type: FlowPanel
+      components:
+      - name: stats_title
+        properties:
+          text: 'Statistics'
+          font_size: 20
+          bold: true
+          foreground: '#1a237e'
+          spacing_below: 'medium'
+        type: Label
+      - name: text_label
+        properties:
+          text: ''
+          font_size: 16
+          foreground: '#424242'
+        type: Label
+    - name: info_panel
+      properties:
+        background: 'white'
+        padding: '20px'
+        spacing_above: 'none'
+        spacing_below: 'none'
+        border: '1px solid #e0e0e0'
+        corner_radius: '8px'
+      type: FlowPanel
+      components:
+      - name: info_title
+        properties:
+          text: 'Information'
+          font_size: 20
+          bold: true
+          foreground: '#1a237e'
+          spacing_below: 'medium'
+        type: Label
+      - name: info_content
+        properties:
+          text: 'This is a professional dashboard layout with modern styling.'
+          font_size: 16
+          foreground: '#424242'
+        type: Label
   - name: footer_panel
     properties:
-      background: '#2c3e50'
+      background: '#1a237e'
       foreground: 'white'
       padding: '20px'
       spacing_above: 'large'
       spacing_below: 'none'
+      height: '60px'
     type: FlowPanel
     components:
     - name: footer_label
       properties:
-        text: '© 2024 My App'
+        text: '© 2024 Professional Dashboard'
         font_size: 14
+        foreground: '#b3e5fc'
       type: Label
   layout_properties: {slot: default}
   name: content_panel
