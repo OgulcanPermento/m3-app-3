@@ -1,9 +1,48 @@
 components:
 - components:
-  - name: text_label
+  - name: header_panel
     properties:
-      text: ''
-    type: Label
+      background: '#2c3e50'
+      foreground: 'white'
+      padding: '20px'
+      spacing_above: 'none'
+      spacing_below: 'large'
+    type: FlowPanel
+    components:
+    - name: title_label
+      properties:
+        text: 'Welcome to My App'
+        font_size: 24
+        bold: true
+      type: Label
+  - name: main_content
+    properties:
+      background: '#f5f6fa'
+      padding: '20px'
+      spacing_above: 'none'
+      spacing_below: 'none'
+    type: FlowPanel
+    components:
+    - name: text_label
+      properties:
+        text: ''
+        font_size: 18
+        foreground: '#2c3e50'
+      type: Label
+  - name: footer_panel
+    properties:
+      background: '#2c3e50'
+      foreground: 'white'
+      padding: '20px'
+      spacing_above: 'large'
+      spacing_below: 'none'
+    type: FlowPanel
+    components:
+    - name: footer_label
+      properties:
+        text: '© 2024 My App'
+        font_size: 14
+      type: Label
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}
